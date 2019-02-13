@@ -53,6 +53,7 @@ xilinx-hdmi-tx-objs := xilinx_drm_hdmi.o
 # the C API around the IP registers
 CFLAGS_xilinx_drm_hdmi.o += -I$(src)/xilinx-hdmi-tx/
 CFLAGS_xilinx_drm_hdmi.o += -I$(src)/include/ -Idrivers/gpu/drm/xilinx/
+CFLAGS_xilinx_drm_hdmi.o += -O1
 
 xilinx-hdmi-tx-objs += xilinx-hdmi-tx/xv_hdmitx.o
 xilinx-hdmi-tx-objs += xilinx-hdmi-tx/xv_hdmitx_sinit.o
